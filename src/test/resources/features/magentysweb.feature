@@ -20,3 +20,9 @@ Feature: Magentys website
       | webpage     |
       | http://www.magentys.io |
       | http://www.magentys.com|
+
+    @complete
+    Scenario: Share a blog
+      Given I am on MagenTys home page
+      When I select a blog
+      Then I should be able to share it
